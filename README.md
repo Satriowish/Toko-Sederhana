@@ -1,8 +1,6 @@
-PROGRAM TOKO SEDERHANA (TOKO BULLWORTH)
+PROGRAM TOKO SEDERHANA 
 
-Program ini menggunakan php dan memiliki koneksi ke database Microsoft SQL Server
-
-Toko ini memiliki beberapa fitur sederhana diaantaranya :
+Aplikasi ini memiliki beberapa fitur sederhana diaantaranya :
 
 -Login Admin
 
