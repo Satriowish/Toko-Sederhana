@@ -1,6 +1,9 @@
 body {
     font-family: 'Assistant', sans-serif;
-    background: linear-gradient(135deg, #001f3f, #003366);
+    background-image: url('../img/background.png');
+    background-size: cover; /* Mengatur gambar agar sesuai dengan ukuran aslinya */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+    background-position: center; /* Memposisikan gambar di tengah */
     margin: 0;
     padding: 0;
     min-height: 100vh;
