@@ -15,6 +15,7 @@ if ($_SESSION['status_login'] != true) {
   <title style="padding: 10px 0px;">Toko Bullworth</title>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/tambah-kategori.css">
 </head>
 <body>
   <header>
