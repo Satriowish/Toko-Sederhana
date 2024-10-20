@@ -26,8 +26,7 @@ if ($kategori === false) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title style="padding: 10px 0px;">Toko Bullworth</title>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/edit-kategori.css">
+  <link rel="stylesheet" href="../../css/edit-kategori1.css">
 </head>
 <body>
   <header>
@@ -37,7 +36,7 @@ if ($kategori === false) {
         <li><a href="../dashboard.php">Dashboard</a></li>
         <li><a href="../profil.php">Profil</a></li>
         <li><a href="../kategori.php">Kategori</a></li>
-        <li><a href="../produk.php">Produk</a></li>
+        <!-- <li><a href="../produk.php">Produk</a></li> -->
         <li><a href="../logout.php"><img style="width: 15px" src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/ffffff/external-logout-real-estate-kmg-design-detailed-outline-kmg-design.png"/></a></li>
       </ul>
     </div>

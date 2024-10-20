@@ -1,12 +1,15 @@
 body {
     font-family: 'Assistant', sans-serif;
-    background: linear-gradient(135deg, #001f3f, #003366);
+    /* background: linear-gradient(135deg, #001f3f, #003366); */
+    background-image: url('../img/background.png');
+    background-size: cover; /* Mengatur gambar agar sesuai dengan ukuran aslinya */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+    background-position: center; /* Memposisikan gambar di tengah */
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #ffffff;
 }
 
 .container {
@@ -24,6 +27,7 @@ header h1 {
     display: inline-block;
     font-family: 'Playfair Display', serif;
     font-size: 2em;
+    color: #ffffff;
 }
 
 header h1 a {
@@ -65,41 +69,9 @@ header ul li a:hover {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-h3 {
+h3, h4 {
     color: #ffffff;
     font-family: 'Playfair Display', serif;
-    margin-top: 30px;
-}
-
-.input-control {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.input-control::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.login-btn {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #4a90e2;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.login-btn:hover {
-    background: #357ae8;
 }
 
 footer {
