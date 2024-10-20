@@ -18,6 +18,7 @@ $d = sqlsrv_fetch_object($query);
   <title style="padding: 10px 0px;">Toko Bullworth</title>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/profil.css">
 </head>
 <body>
   <header>
