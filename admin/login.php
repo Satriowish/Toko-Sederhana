@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Toko Pak Hadi</title>
+  <title>Toko Bullworth</title>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body id="bg-login">
   <div class="box-login">
@@ -19,7 +19,7 @@
     <?php 
       if(isset($_POST['submit'])){
         session_start();
-        include 'konekdb.php'; // File koneksi harus menggunakan sqlsrv
+        include '../database/konekdb.php'; // File koneksi harus menggunakan sqlsrv
 
         // Amankan input dengan htmlspecialchars atau filter_input
         $user = htmlspecialchars($_POST['user']);
@@ -43,6 +43,7 @@
           $_SESSION['status_login'] = true;
           $_SESSION['adn_global'] = $c;
           $_SESSION['id'] = $c->admin_id;
+          //
           echo '<script>window.location="dashboard.php"</script>';
         } else {
           echo '<script>alert("Username atau Password Anda Salah!")</script>';

@@ -1,6 +1,6 @@
 <?php 
 
-include 'konekdb.php';
+include '../../database/konekdb.php';
 
 // Pastikan ID dikirim melalui URL
 if (isset($_GET['id'])) {
@@ -17,7 +17,7 @@ if (isset($_GET['id'])) {
     if ($delete) {
         // Jika berhasil, redirect ke halaman kategori
         echo '<script>alert("Kategori berhasil dihapus");</script>';
-        echo '<script>window.location="kategori.php"</script>';
+        echo '<script>window.location="../kategori.php"</script>';
     } else {
         // Jika gagal, tampilkan pesan error
         echo 'Gagal menghapus data: ' . print_r(sqlsrv_errors(), true);

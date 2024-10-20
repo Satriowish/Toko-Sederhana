@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'konekdb.php';
+include '../database/konekdb.php';
 if ($_SESSION['status_login'] != true) {
     echo '<script>window.location="login.php"</script>';
 }
@@ -12,14 +12,14 @@ if ($_SESSION['status_login'] != true) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toko Pak Hadi</title>
+  <title>Toko Bullworth</title>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1><a href="dashboard.php">Toko Pak Hadi</a></h1>
+      <h1><a href="dashboard.php">Toko Bullworth</a></h1>
       <ul>
         <li><a href="dashboard.php">Dashboard</a></li>
         <li><a href="profil.php">Profil</a></li>
@@ -33,7 +33,7 @@ if ($_SESSION['status_login'] != true) {
     <div class="container">
       <h3>Kategori</h3>
       <div class="box">
-        <p style="margin-bottom: 15px;"><a href="tambah-kategori.php">Tambah Data Kategori</a></p>
+        <p style="margin-bottom: 15px;"><a href="proses/tambah-kategori.php">Tambah Data Kategori</a></p>
         <table border="1" cellspacing="0" class="table">
           <thead>
             <tr>
@@ -55,10 +55,10 @@ if ($_SESSION['status_login'] != true) {
               <td><?php echo $nomor++ ?></td>
               <td><?php echo $row['kategori_name'] ?></td>
               <td style="text-align: center;">
-                <a href="edit-kategori.php?id=<?php echo $row['kategori_id'] ?>">
+                <a href="proses/edit-kategori.php?id=<?php echo $row['kategori_id'] ?>">
                   <input type="submit" name="edit" value="Edit" class="edit_btn">
                 </a> 
-                <a href="hapus-kategori.php?id=<?php echo $row['kategori_id'] ?>" onclick="return confirm('Yakin Menghapus Data ?')">
+                <a href="proses/hapus-kategori.php?id=<?php echo $row['kategori_id'] ?>" onclick="return confirm('Yakin Menghapus Data ?')">
                   <input type="submit" name="delete" value="DELETE" class="delete_btn">
                 </a>
               </td>

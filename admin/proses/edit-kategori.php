@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'konekdb.php'; 
+include '../../database/konekdb.php'; 
 if ($_SESSION['status_login'] != true) {
     echo '<script>window.location="login.php"</script>';
 }
@@ -12,7 +12,7 @@ $params = array($id);
 $kategori = sqlsrv_query($conn, $query, $params);
 
 if ($kategori === false) {
-    echo '<script>window.location="kategori.php"</script>';
+    echo '<script>window.location="../admin/kategori.php"</script>';
 } else {
     $o = sqlsrv_fetch_object($kategori); // Hanya panggil sekali
 }
@@ -24,20 +24,20 @@ if ($kategori === false) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title style="padding: 10px 0px;">Toko Pak Hadi</title>
+  <title style="padding: 10px 0px;">Toko Bullworth</title>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1><a href="dashboard.php">Toko Pak Hadi</a></h1>
+      <h1><a href="../dashboard.php">Toko Bullworth</a></h1>
       <ul>
-        <li><a href="dashboard.php">Dashboard</a></li>
-        <li><a href="profil.php">Profil</a></li>
-        <li><a href="kategori.php">Kategori</a></li>
-        <li><a href="produk.php">Produk</a></li>
-        <li><a href="logout.php"><img style="width: 15px" src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/ffffff/external-logout-real-estate-kmg-design-detailed-outline-kmg-design.png"/></a></li>
+        <li><a href="../dashboard.php">Dashboard</a></li>
+        <li><a href="../profil.php">Profil</a></li>
+        <li><a href="../kategori.php">Kategori</a></li>
+        <li><a href="../produk.php">Produk</a></li>
+        <li><a href="../logout.php"><img style="width: 15px" src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/ffffff/external-logout-real-estate-kmg-design-detailed-outline-kmg-design.png"/></a></li>
       </ul>
     </div>
   </header>
@@ -65,7 +65,7 @@ if ($kategori === false) {
                 echo 'Gagal Melakukan Update Data: ' . print_r(sqlsrv_errors(), true);
             } else {
                 echo '<script>alert("Edit Data Berhasil")</script>';
-                echo '<script>window.location="kategori.php"</script>';
+                echo '<script>window.location="../kategori.php"</script>';
             }
         }
         ?>
