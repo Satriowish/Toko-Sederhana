@@ -1,0 +1,96 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    background: linear-gradient(135deg, #001f3f, #003366);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+}
+
+header h1 {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.section {
+    flex: 1;
+    padding: 50px 0;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+h3, h4 {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Efek futuristik tambahan */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(74, 144, 226, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    }
+}
+
+.box {
+    animation: glow 3s infinite;
+}
+
